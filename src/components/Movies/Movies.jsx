@@ -11,6 +11,7 @@ const Movies = () => {
     const { data } = await axios.get(
       `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}`
     );
+    console.log(data.results);
     setContent(data.results);
     setTotalPages(data.total_pages);
   };
@@ -34,7 +35,7 @@ const Movies = () => {
                 name={c.title || c.original_name}
                 image={c.poster_path}
                 vote={c.vote_average}
-                media={c.media_type}
+                media="movie"
                 date={c.release_date || c.first_air_date}
               />
             );

@@ -1,13 +1,7 @@
 import "./styles.css";
-import movielogoD from "../../Assests/Images/movie_black_24dp.svg";
 import movielogoL from "../../Assests/Images/movie_white_24dp.svg";
-import lightMode from "../../Assests/Images/light_mode_white_24dp.svg";
-import darkMode from "../../Assests/Images/dark_mode_black_24dp.svg";
-import expandD from "../../Assests/Images/expand_more_black_24dp.svg";
 import expandL from "../../Assests/Images/expand_more_white_24dp.svg";
-import seriesD from "../../Assests/Images/series_black_24dp.svg";
 import seriesL from "../../Assests/Images/series_white_24dp.svg";
-import trendingD from "../../Assests/Images/trending_up_black_24dp.svg";
 import trendingL from "../../Assests/Images/trending_up_white_24dp.svg";
 import searchL from "../../Assests/Images/search_white_24dp.svg";
 import { Link } from "react-router-dom";

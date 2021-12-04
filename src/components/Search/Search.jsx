@@ -33,7 +33,7 @@ const Search = () => {
         process.env.REACT_APP_API_KEY
       }&language=en-US&query=${searchText}&page=${page}&include_adult=false`
     );
-
+    console.log(data.results);
     setContent(data.results);
     setTotalPages(data.total_pages);
   };
@@ -89,7 +89,7 @@ const Search = () => {
                 name={c.title || c.original_name}
                 image={c.poster_path}
                 vote={c.vote_average}
-                media={type ? "Movies" : "TV series"}
+                media={type ? "tv" : "movie"}
                 date={c.release_date || c.first_air_date}
               />
             );
